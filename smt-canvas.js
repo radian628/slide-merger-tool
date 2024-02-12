@@ -1,6 +1,7 @@
 {
   // INSTRUCTIONS: Set this to the ID of the course you want to run the slide merger tool on.
-  // Run the script on the same domain as the course you intend to run it on.
+  // Run the script on the same domain as the course you intend to run it on to prevent CORS issues.
+  // Paste the script in the browser console and hit ENTER
   const CANVAS_COURSE_ID = 1942632;
 
   async function findPDFsInCanvasModules(courseid) {
