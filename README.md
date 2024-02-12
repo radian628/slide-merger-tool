@@ -13,5 +13,6 @@ These scripts follow the same general pattern:
 
 ## Which script do I use?
 
-- If you're trying to access a page that has PDF download links directly embedded into it, use `smt-raw.js`.
-- If you're trying to access PDFs from files hosted on Canvas, use `smt-canvas.js`.
+- If you're trying to merge PDFs from a page where PDF links are directly embedded into it, use `smt-raw.js`.
+- If you're trying to merge PDFs from files hosted on Canvas, use `smt-canvas.js`.
+- If you're trying to merge _web pages_ hosted on Canvas, use `smt-canvas-pages.js`.
