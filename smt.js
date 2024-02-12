@@ -13,7 +13,7 @@
         ).map((mod) =>
           fetch(mod.items_url).then(async (items) => await items.json())
         )
-      )
+      ).catch(() => [])
     ).flat();
 
     const pdfItems = moduleItems.filter(
@@ -22,7 +22,7 @@
 
     const files = await Promise.all(
       pdfItems.map((item) => fetch(item.url).then(async (pdf) => pdf.json()))
-    );
+    ).catch(() => []);
 
     return files.map((f) => f.url);
   }
